@@ -1,0 +1,27 @@
+.sign-up {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+    background-color: #02223d;
+    background-position: center; 
+    color: whitesmoke;
+
+    .title {
+        font-size: 38px;
+        font-weight: 600;
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        
+
+    }
+    
+
+    .button-text{
+        display: flex;
+        justify-content: space-between;
+    }
+    
+}
+

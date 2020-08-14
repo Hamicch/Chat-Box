@@ -2,6 +2,11 @@ import React from 'react';
 import './App.css';       
 import io from 'socket.io-client';
 
+import {Switch, Route } from 'react-router-dom';
+import SignUp from './pages/Sign-up/sign-up';
+
+
+
 function App() {
 
   const [user, setUser] = React.useState()
@@ -72,6 +77,7 @@ function App() {
 
   return (
     <div className="App">
+
         <h2 id = 'header'>Chat App</h2>
         <div id = 'app-sub'>
           <div id = 'app-div'>
@@ -101,6 +107,11 @@ function App() {
           </form>
         </div>
       </div>
+  <Switch>
+    <Route exact path="/"  component={SignUp} />
+    <Route path="/sign-in"  component={SignIn} />
+  </Switch>
+
     </div>
   );
 }
